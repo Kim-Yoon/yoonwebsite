@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOON'S GARDEN</title>
+        <meta charset="UTf-8"> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <style tpye="text/css">
+           
+          body {background-image:url("photo/flower2.jpg");background-repeat: no-repeat;
+                background-attachment: scroll;background-size: cover;opacity: 0;overflow: scroll;}
+          footer{background-color: black;display:block;height: 120px;}  
+          #bigtitle {font-family: 'Dancing Script', cursive;font-size:45px;
+          color:#7F7F7F;position:relative;left:580px;top:10px;display:inline;letter-spacing: 4px;}
+          
+          #menu {height: 100px;position: relative;background-color: rgba(0, 0, 0, 0.17);}
+          .th {font-family:'Times New Roman', Times, serif;color:#595959;font-size:18px; width: 373px;text-decoration: underline;}
+          p {font-family: 'Nanum Pen Script', cursive;color:#FFFFFF;text-align: center;position: relative;top:90px;
+          ;font-size: 30px;line-height: 45px;letter-spacing: 4px;}
+          a:link{color:black;}
+          a:visited{color:black;}
+          #license {width: 100%;height:80px;position:relative;top:15px}
+          .th2{font-size:12px;color: white;}
+          .tdtd{font-size:9px;color: white;text-align: center;}
+          #th3{font-size: 15px;color: white;}
+          #button{position: relative;left: 670px;top: 70px;}
+          
+     
+    </style>
+    <script type="text/javascript">
+       var start;
+       var op_count=0
+       var settime;
+       window.onload=function(){
+           start=setTimeout(fade_in,500)
+       }
+       function fade_in(){
+           op_count=op_count+0.1;
+           backg.style.opacity=op_count;
+           settime=setTimeout(fade_in,100);
+           if(op_count>1){clearTimeout(settime);}
+       }
+     
+   
+        var clockk=document.querySelector(".clock");
+     function getTime(){
+        const date=new Date();
+        const hours=date.getHours();
+        const min=date.getMinutes()
+        const sec=date.getSeconds()
+        clockk.innerHTML=hours+":"+min+":"+sec;
+     }
+    </script>    
+
+</head>
+
+ 
+<body id="backg">
+    <h1 class="clock"></h1><br>
+    <a href="index.html" style="text-decoration:none"><h1 id="bigtitle">YOON'S GARDEN</h1></a>
+    <br><br><br><br><br>
+    <table  id="menu" > 
+        <tr>
+            <th class="th"><a href="PROFILE.html">PROFILE</a></th>
+            <th class="th"><a href="LIFE.html">LIFE</a></th>
+            <th class="th"><a href="ACHIEVEMENT.html"> ACHIEVEMENT </a></th>
+            <th class="th"><a href="TMI.html">TMI</a></th>
+        </tr>
+    </table>
+    <br><br><br><br><br><br>
+        <P>
+           윤이의 정원에 오신 것을 환영합니다<br>
+           정원에 다양한 꽃의 꽃말처럼<br>
+           저에 대한 이야기를 들려드릴께요.</P>
+    <a href="join.html"><button id="button">Join with me</button></a>
+    
+
+    
+</body>
+<br><br><br><br><br><br><br><br><br><Br><br><br><br><br><br><br>
+<footer>
+    <table id="license">
+        <tr>
+        <th rowspan="3" id="th3">Yoon's Garden</th><th class="th2">LICENSE</th><th class="th2">CONTACT</th>
+        <th rowspan="3"><a href="https://www.instagram.com/oligodang.__/"><img src="photo/insta.png" width="20px" height="20px"></a>&nbsp;&nbsp;
+            <a href="https://www.youtube.com/channel/UCooOoEoUvbf4nEC82JXqKMw"><img src="photo/youtube.png" width="20px" height="20px"></a></th>
+        </tr>
+        <tr>
+            <td class="tdtd">ⓒ2021 KIM YOON</td><td class="tdtd">Email:kyoon0203@gmail.com</td>
+        </tr>
+        <tr>
+        <td class="tdtd">All rights reserved</td><td class="tdtd">Phone:010-8953-6038</td>
+        </tr>
+    </table>
+</footer>
+</html>
