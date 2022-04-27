@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>YOON'S GARDEN</title>
+        <meta charset="utf-8"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Jua&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Jua&family=Nanum+Pen+Script&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+        <style tpye="text/css">
+           
+          body {background-image:url("photo/cloud.jpg");background-repeat: no-repeat;
+                background-attachment: scroll;background-position:center;background-size: cover;}
+          footer{background-color: black;display:block;height: 120px;}  
+          #bigtitle {font-family: 'Dancing Script', cursive;font-size:45px;
+          color:#7F7F7F;position:absolute;left:580px;top:30px;display:inline;letter-spacing: 4px;}
+          #menu {height: 100px;position: absolute;top:150px;background-color: rgba(0, 0, 0, 0.17);}
+   
+          .th {font-family:'Times New Roman', Times, serif;color:#595959;font-size:18px; width: 373px;text-decoration: underline;}
+          a:link{color:black;}
+          a:visited{color:black;}
+          #license {width: 100%;height:80px;position:relative;top:15px}
+          .th2{font-size:12px;color: white;}
+          .tdtd{font-size:9px;color: white;text-align: center;}
+          #th3{font-size: 15px;color: white;}
+          #life{font-size: 45px;text-align: center;}
+          #t2{width: 60%;height: 300px;position:relative;top:40px;left:320px;}
+          #tube {position: absolute;left:120px;top: 830px;}
+        
+          #name{font-family: 'Noto Serif KR', serif;font-size: 20px;text-align: center;}
+          #st1{font-size: 20px;font-weight: bold;width: 130px;}
+          #st2{font-size: 20px;font-weight: bold;width:100px}
+          #st3{font-size: 20px;font-weight: bold;}
+          #oligo{width:1300px;margin-left: 100px;border-spacing: 20px;}
+          #talking{font-family: 'Noto Serif KR', serif;font-size: 15px;text-align: center;line-height: 30px;}
+          figcaption {font-family:'Jua', sans-serif;font-size:18px;text-align: center;}
+          .hr1{border-color: black; }
+          #clock{font-family:'Times New Roman', Times, serif;position: absolute;left: 780px;top: 345px;font-weight: bold;
+          font-size: 20px;}
+
+    </style>
+    <script type="text/javascript">
+    function startTime(){
+        const date=new Date();
+        const hours=date.getHours();
+        const min=date.getMinutes()
+        const sec=date.getSeconds()
+        document.getElementById("clock").innerHTML=hours+":"+min+":"+sec;
+        setTimeout(startTime,1000)
+    }
+    </script>    
+
+
+
+</head>
+    <body onload="startTime()">
+        <br><br>
+        <a href="index.html" style="text-decoration:none"><h1 id="bigtitle">YOON'S GARDEN</h1></a>
+        <br><br><br>
+        <table  id="menu">
+            <tr>
+                <th class="th"><a href="PROFILE.html">PROFILE</a></th>
+                <th class="th"><a href="LIFE.html">LIFE</a></th>
+                <th class="th"><a href="ACHIEVEMENT.html"> ACHIEVEMENT </a></th>
+                <th class="th"><a href="TMI.html">TMI</a></th>
+                
+            </tr>
+        </table>
+        <br><br><br><br><br><br>
+        <h1 id="life">LIFE</h1>
+        <span style="font-size: medium;position: absolute;left: 600px;top: 350px;
+        font-family:'Times New Roman', Times, serif;font-weight: bold;">인생의 시간은 흐른다.</span>
+        <div id="clock"></div>
+        
+        <table id="oligo" >
+            <tr><td id="st1">ABOUT<hr></td><td id="st2">SCENE<hr/></td><td id="st3">STORY<hr/></td></tr>
+            <tr>
+              <div style="text-align: center;">
+              <td ><img src="photo/redy.png" width="300px" height="300px"></td></div>
+              <td ><figure><video id="photo/myvideo" controls src="trip.mp4" width="200px" height="280px" preload="auto" poster="ocean.jpg"></video>
+                  <figcaption>2019년 다낭여행</figcaption></figure>
+                </td><td ><span style="font-size: 20px;font-weight: bold;">2019.08 DANANG and HOI AN</span><br>
+                 <blockquote><span style="font-family: 'Nanum Pen Script', cursive;font-size: 23px;">"20살이 되고나서 처음으로 친구와 여행을 갔다왔다.<br>
+                 한국에서는 느낄 수 없는 여유를 느낄 수 있었고, 우리나라와는 다른 음식, 언어 등
+                 다양한 문화를 체험할 수 있었다. 가장 좋았던 것은 한 호이안에서 한 카페에 앉아
+                 낮부터 밤까지 하늘의 색이 변하는 것을 보면서 여유를 즐길 수 있었던 점이다."</span></blockquote>
+                </td>  
+            </tr>
+        
+            <tr id="ice"> <td><span style="margin-left: 75px;">
+                <a href="https://www.youtube.com/channel/UCooOoEoUvbf4nEC82JXqKMw">
+                <img src="photo/tube.png" width="30px" height="30px"></a></span>
+                <span style="margin-left: 85px;"><a href="https://www.instagram.com/oligodang.__/">
+                    <img src="photo/gram.png" width="30px" height="30px"></a></span></td>
+                <td></td><td></td>
+            </tr>
+            <tr>
+                <td id="name">김 윤(KIM YOON)<hr class="hr1"></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td id="talking">여행을 통해 알게 된 것, 보게 된 것,<br> 
+                    만난 사람들을 기록하려고 합니다<br>
+                나중에 내가 이곳을 다녀왔다 것을 증명하고 
+                <br>다시 떠올리게 만들 유일한 방법이니까요<br><br>
+                </td><td></td><td></td>
+            </tr>
+
+
+        </table>
+         </body>
+        <footer>
+            <table id="license">
+                <tr>
+                <th rowspan="3" id="th3">Yoon's Garden</th><th class="th2">LICENSE</th><th class="th2">CONTACT</th>
+                <th rowspan="3"><a href="https://www.instagram.com/oligodang.__/"><img src="photo/insta.png" width="20px" height="20px"></a>&nbsp;&nbsp;
+                    <a href="https://www.youtube.com/channel/UCooOoEoUvbf4nEC82JXqKMw"><img src="photo/youtube.png" width="20px" height="20px"></a></th>
+                </tr>
+                <tr>
+                <td class="tdtd">ⓒ2021 KIM YOON</td><td class="tdtd">Email:kyoon0203@gmail.com</td>
+                </tr>
+                <tr>
+                <td class="tdtd">All rights reserved</td><td class="tdtd">Phone:010-8953-6038</td>
+                </tr>
+            </table>
+        </footer>
+        </html>

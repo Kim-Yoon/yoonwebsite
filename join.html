@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOON'S GARDEN</title>
+        <meta charset="UTf-8"> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <style tpye="text/css">
+           
+          body {background-image:url("photo/cloud.jpg");background-repeat: no-repeat;
+                background-attachment: scroll;background-size: cover;}
+          footer{background-color: black;display:block;height: 120px;}  
+          #bigtitle {font-family: 'Dancing Script', cursive;font-size:45px;
+          color:#7F7F7F;position:absolute;left:580px;top:30px;display:inline;letter-spacing: 4px;}
+          #smalltitle{font-size: 45px;text-align: center;position: relative;top: 100px;}
+          #menu {height: 100px;position: absolute;top:150px;background-color: rgba(0, 0, 0, 0.17);}
+          .th {font-family:'Times New Roman', Times, serif;color:#595959;font-size:18px; width: 373px;text-decoration: underline;}
+         
+          a:link{color:black;}
+          a:visited{color:black;}
+          #license {width: 100%;height:80px;position:relative;top:15px}
+          .th2{font-size:12px;color: white;}
+          .tdtd{font-size:9px;color: white;text-align: center;}
+          #th3{font-size: 15px;color: white;}
+          #agree{display: inline-block;border: medium double black;position: relative;top: 20px;left: 300px;}
+          #information{display: inline-block;position: relative;top: 40px;left: 500px;
+          line-height: 40px;text-align: center;font-size: 18px;}
+     
+    </style>
+    <script type="text/javascript">
+     
+
+       function backToHome(){
+           var answer=confirm("작성하신 모든 내용이 사라집니다. 가입을 취소하시겠습니까?")
+             if (answer==true){
+                 window.location.replace("index.html")
+             }
+             if (answer==false){
+                 alert("취소 되셨습니다.")
+
+             }
+       }
+
+        var domsign=document.getElementById("sign")
+        domsign.onmousedown=start;
+        domsign.onmousemove=draw;
+        domsign.onmouseup=stop;
+        var canvas = document.getElementById("myCanvas");
+        var myContext = canvas.getContext("2d");
+
+        var stopped = true;
+
+        function start() {
+          e = window.event;
+          myContext.moveTo(e.clientX-10, e.clientY-10);
+          stopped = false;
+}
+
+        function stop() {stopped = true;}
+
+        function draw() {
+          if (!stopped) {
+            e = window.event;
+            myContext.lineTo(e.clientX-10, e.clientY-10);
+            myContext.stroke();
+   }
+}
+       
+    </script>    
+
+</head>
+
+ 
+<body >
+    <br><br>
+    <a href="index.html" style="text-decoration:none"><h1 id="bigtitle">YOON'S GARDEN</h1></a>
+    <br><br><br><br><br>
+    <table  id="menu" > 
+        <tr>
+            <th class="th"><a href="PROFILE.html">PROFILE</a></th>
+            <th class="th"><a href="LIFE.html">LIFE</a></th>
+            <th class="th"><a href="ACHIEVEMENT.html"> ACHIEVEMENT </a></th>
+            <th class="th"><a href="TMI.html">TMI</a></th>
+        </tr>
+    </table>
+    <h1 id="smalltitle">Join Page</h1><br>
+    <br><br>
+       <span style="position: relative;top: 10px;left: 300px;"><input type="checkbox" name="agree" value="True"/> 이용약관에 동의합니다</span><br>
+         <div id="agree"><input type="checkbox" name="agree1" value="True"/>
+        제 1조(목적)<br>
+            이 약관은 "윤이의 정원"이 운영하는 홈페이지에 있어서 제공하는 인터넷 서비스를<br> 
+            이용함에 있어 사이버 공간과 이용자의 권리, 의무, 및 책임사항을 규정함을 목적으로 합니다.<br>
+            <br>
+        <input type="checkbox" name="agree2" value="True"/>
+        개인정보 수집 동의<br>
+           회원의 정보를 수집하는 데 있어서 오직 회원관리에만 정보를 수집하며 다른 수단으로는 사용하지 않음을 안내드립니다       
+        </div><br>
+    <div id="information">
+        Name:
+        <input type="text" name="name" placeholder="name"><br>
+         ID:
+        <input type="text" name="id"  ><br>
+        Password:
+        <input type="password" name="pwd" >
+        <img src="photo/mark.png" width="21px" height="21px" onmouseover="alert('영어,숫자,특수기호를 포함하십시오.')"><br>
+        Email:
+        <input type="email" name="Email" placeholder="_______@gmail.com" ><br>
+        Student number:
+        <input type="text" name="student" placeholder="0000000" ><br>
+        Phone number:
+        <input type="tel" name="tel" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder="000-0000-0000" ><br>
+        Birth:
+        <input type="date" name="birth"><br>
+        Put you sign here:<br>
+        <div id="sign">
+        <canvas id="myCanvas" width="400" height="200" style="border-style: solid;"></canvas></div><br>
+        
+        
+        <button type="submit" onclick="confirm('정말 가입하시겠습니다?')">Submit</button>
+        <button type="reset" onclick="backToHome()">Cancel</button>
+    </div>
+
+    
+</body>
+<br><br><br><br>
+<footer>
+    <table id="license">
+        <tr>
+        <th rowspan="3" id="th3">Yoon's Garden</th><th class="th2">LICENSE</th><th class="th2">CONTACT</th>
+        <th rowspan="3"><a href="https://www.instagram.com/oligodang.__/"><img src="photo/insta.png" width="20px" height="20px"></a>&nbsp;&nbsp;
+            <a href="https://www.youtube.com/channel/UCooOoEoUvbf4nEC82JXqKMw"><img src="photo/youtube.png" width="20px" height="20px"></a></th>
+        </tr>
+        <tr>
+            <td class="tdtd">ⓒ2021 KIM YOON</td><td class="tdtd">Email:kyoon0203@gmail.com</td>
+        </tr>
+        <tr>
+        <td class="tdtd">All rights reserved</td><td class="tdtd">Phone:010-8953-6038</td>
+        </tr>
+    </table>
+</footer>
+</html>

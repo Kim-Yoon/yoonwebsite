@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOON'S GARDEN</title>
+        <meta charset="UTf-8"> 
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@500&family=Jua&family=Nanum+Pen+Script&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+        <style tpye="text/css">
+            body {background-image:url("photo/cloud.jpg");background-repeat: no-repeat;
+            background-attachment: scroll;background-position:center;background-size: cover;}
+            footer{background-color: black;display:block;height: 120px;}  
+            #bigtitle {font-family: 'Dancing Script', cursive;font-size:45px;
+          color:#7F7F7F;position:absolute;left:580px;top:30px;display:inline;letter-spacing: 4px;}
+            #menu {height: 100px;position: absolute;top:150px;background-color: rgba(0, 0, 0, 0.17);}
+            .th {font-family:'Times New Roman', Times, serif;color:#595959;font-size:18px; width: 373px;text-decoration: underline;}
+
+
+            a:link{color:black;}
+            a:visited{color:black;}
+            #smalltitle{font-size: 45px;text-align: center;}
+            #back{background-color:rgba(0, 0, 0, 0.45);width: 100;height:400px;opacity: 0;}
+            #license{width: 100%;height:80px;position: relative;top: 15px;}
+           .th2{font-size:12px;color: white;}
+           .tdtd{font-size:9px;color: white;text-align: center;}
+           #th3{font-size: 15px;color: white;}
+           
+           
+           #pla{position: absolute;left:430px;top:400px;}
+           #see{position: absolute; left: 770px; top:400px;}
+           #uni{font-family: 'Noto Serif KR', serif;font-size: 20px;}
+           .A {font-family: 'Noto Serif KR', serif;font-size: 18px;line-height: 25px;}
+
+           .B{font-family: 'Noto Serif KR', serif;font-size:15px;line-height: 25px;}
+           #think{font-family: 'Nanum Myeongjo', serif;text-align: center;
+           font-size: 30px;letter-spacing: 3px;word-spacing: 3px;font-weight: bold;line-height: 35px;}
+           #quoter{margin-top: 20px;}
+           #quotel{margin-bottom:10px}
+           #person{font-family: 'Nanum Myeongjo', serif;text-align: center;
+           font-size: 20px;letter-spacing: 3px;word-spacing: 3px;line-height: 25px;}
+           .box{transition: 0.7s ease;z-index: 1;}
+           #text{position: absolute;opacity: 0;top: 550px;left: 520px;z-index: 2;
+           font-size: 50px;font-family: 'Caveat', cursive;font-weight: bold;}
+           .box:hover{opacity: 0.7;}
+           .box:hover #text{opacity: 1;}
+
+           .box2{transition: 0.7s ease;z-index: 1;}
+           #text2{position: absolute;opacity: 0;top: 550px;left: 890px;z-index: 2;
+           font-size: 50px;font-family: 'Caveat', cursive;font-weight: bold;}
+           .box2:hover{opacity: 0.6;}
+           .box2:hover #text2{opacity: 1;}
+          
+        </style>
+       
+       
+       
+       
+    <script type="text/javascript">
+       var start;
+       var op_count=0
+       var settime;
+       window.onload=function(){
+           start=setTimeout(fade_in(),500)
+       }
+       function fade_in(){
+           op_count=op_count+0.1;
+           back.style.opacity=op_count;
+           settime=setTimeout(fade_in,100);
+           if(op_count>1){clearTimeout(settime);}
+       }
+       
+     
+    </script>    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    </head>
+<body>
+    
+    <br>
+    <a href="index.html" style="text-decoration:none"><h1 id="bigtitle">YOON'S GARDEN</h1></a>
+    <br>
+    <table  id="menu">
+        <tr>
+            <th class="th"><a href="PROFILE.html">PROFILE</a></th>
+            <th class="th"><a href="LIFE.html">LIFE</a></th>
+            <th class="th"><a href="ACHIEVEMENT.html"> ACHIEVEMENT </a></th>
+            <th class="th"><a href="TMI.html">TMI</a></th>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br>
+    <h1 id="smalltitle">ACHIEVEMENT</h1>
+    <div id="back"></div>
+    
+      <p ><div style="position: absolute;left:110px;top: 400px;">
+        <span style="font-family: 'Abril Fatface', cursive;font-size:32px;line-height: 50px;">BIOLOGY SYSTEM</span>
+        <br><span id="uni">&nbsp;&nbsp;2019년 숙명여자대학교</span><br>
+        <span class="A" >&nbsp;&nbsp;&nbsp;&nbsp;생명시스템 전공</span><br>
+        <span class="B">&nbsp;&nbsp;&nbsp;&nbsp;-유전체학</span><br>
+        <span class="B">&nbsp;&nbsp;&nbsp;&nbsp;-유전학<br></span>
+        <span class="B">&nbsp;&nbsp;&nbsp;&nbsp;-동물생리학<br></span>
+        <span class="B">&nbsp;&nbsp;&nbsp;&nbsp;-고등생물학실험<br></span>
+        <span class="B">&nbsp;&nbsp;&nbsp;&nbsp;-신경생물학</span></div></p>
+        
+        <div class="box">
+         <img id="pla" src="photo/pla.PNG" width="300px" height="350px" >
+         <div id="text">Biology</div>
+        </div>
+
+         <div class="box2">
+          <img id="see" src="photo/see.jpg" width="300px" height="350px">
+          <div id="text2">IT</div>
+         </div> 
+
+        <p>
+          <div style="position: absolute;top:600px;left: 1100px;">
+            <span class="B">&nbsp;&nbsp;&nbsp;&nbsp;-프로그래밍입문(python)</span><br>
+            
+            <span class="B">&nbsp;&nbsp;&nbsp;&nbsp;-웹프로그래밍 기초(html,CSS,JAVAscript)</span><br>
+            <span class="A">&nbsp;&nbsp;2021년 IT공학 복수전공</span><br>
+            <span style="font-family: 'Abril Fatface', cursive;font-size: 32px;">Informational Technology</span></div></p>
+    
+    
+    <br><br><br><br><br>
+    
+    <p id="think"><img id="quotel" src="photo/quoter.png" width="30px" height="30px"><br>
+       Never regret yesterday.<br>
+        Life is in you today, and you make your tomorrow.
+        <br><img id="quoter" src="photo/quotel.png" width="30px" height="30px"><br></p>
+        <p id="person">-L. Ron Hubbard-
+    </p><br><br><br><br>
+
+    
+    
+</body>
+<footer>
+    <table id="license">
+        <tr>
+        <th rowspan="3" id="th3">Yoon's Garden</th><th class="th2">LICENSE</th><th class="th2">CONTACT</th>
+        <th rowspan="3"><a href="https://www.instagram.com/oligodang.__/"><img src="photo/insta.png" width="20px" height="20px"></a>&nbsp;&nbsp;
+            <a href="https://www.youtube.com/channel/UCooOoEoUvbf4nEC82JXqKMw"><img src="photo/youtube.png" width="20px" height="20px"></a></th>
+        </tr>
+        <tr>
+        <td class="tdtd">ⓒ2021 KIM YOON</td><td class="tdtd">Email:kyoon0203@gmail.com</td>
+        </tr>
+        <tr>
+        <td class="tdtd">All rights reserved</td><td class="tdtd">Phone:010-8953-6038</td>
+        </tr>
+    </table>
+</footer>
+</html>

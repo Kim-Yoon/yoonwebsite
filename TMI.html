@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOON'S GARDEN</title>
+        <meta charset="utf-8"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+        <style tpye="text/css">
+           
+          body {background-image:url("photo/cloud.jpg");background-repeat: no-repeat;
+                background-attachment: scroll;background-position:center;background-size: cover;opacity: 0;}
+          footer{background-color: black;display:block;height: 120px;}  
+          #bigtitle {font-family: 'Dancing Script', cursive;font-size:45px;
+          color:#7F7F7F;position:absolute;left:580px;top:30px;display:inline;letter-spacing: 4px;}
+          #menu {height: 100px;position: absolute;top:150px;background-color: rgba(0, 0, 0, 0.17);}
+          
+          .th {font-family:'Times New Roman', Times, serif;color:#595959;font-size:18px; width: 373px;text-decoration: underline;}
+          a:link{color:black;}
+          a:visited{color:black;}
+          #license {width: 100%;height:80px;position:relative;top:15px}
+          .th2{font-size:12px;color: white;}
+          .tdtd{font-size:9px;color: white;text-align: center;}
+          #th3{font-size: 15px;color: white;}
+          #tmi{font-size: 45px;text-align: center;}
+          .li{font-family: 'Gamja Flower', cursive;font-size: 18pt;
+          list-style-image:url("flo2.png");list-style-position: inside;color:#D9D9D9  ;
+          line-height: 40px;text-align: center; }
+          #ul {display:inline-block;border:thick dashed black;position: relative;
+          left:400px;z-index: 1;background-color: rgba(0, 0, 0, 0.40);}
+          #brown{position: absolute;top: 350px;left: 620px;z-index: 2;}
+          #pink{position:absolute;top: 343px;left:690px ;z-index: 3;}
+    </style>
+    <script type="text/javascript">
+        var start;
+        var op_count=0
+        var settime;
+        window.onload=function(){
+            start=setTimeout(fade_in,500)
+        }
+        function fade_in(){
+            op_count=op_count+0.1;
+            backg.style.opacity=op_count;
+            settime=setTimeout(fade_in,100);
+            if(op_count>1){clearTimeout(settime);}
+        }
+        function colorc(){
+        var colorchange=document.getElementById("ul")
+            
+            ul.style.backgroundColor="rgba(0, 0, 0, 0.03)"}
+
+   
+    
+            </script>        
+
+
+</head>
+    <body id="backg" onscroll="colorc()">
+        <br><br>
+        <a href="index.html" style="text-decoration:none"><h1 id="bigtitle">YOON'S GARDEN</h1></a>
+        <br><br><br>
+        <table  id="menu">
+            <tr>
+                <th class="th"><a href="PROFILE.html">PROFILE</a></th>
+                <th class="th"><a href="LIFE.html">LIFE</a></th>
+                <th class="th"><a href="ACHIEVEMENT.html"> ACHIEVEMENT </a></th>
+                <th class="th"><a href="TMI.html">TMI</a></th>
+            </tr>
+        </table>
+        <br><br><br><br><br><br>
+        <h1 id="tmi">TMI</h1><Br>
+        <div id="brown"><img src="photo/brown.png" width="270px" height="60px"></div>
+        <div id="pink"><img src="photo/pink.png" width="245px" height="60px"></div>
+        <div id="ul" >
+        <ul >
+            <li class="li">좋아하는 음식ː마라탕, 곱창 </li>
+            <li class="li">MBTI:INFP  <span style="text-decoration: underline;font-size: 11px;">
+                <a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-infp">
+                    INFP가 궁금하다면?</a> </span></li>
+            <li class="li">감동 받은 영화ː모노노케 히메</li>
+                
+            <li class="li">좋아하는 날씨ː 햇빛이 쨍쨍한데 바람도 같이 불때</li>
+                
+            <li class="li">좋아하는 연예인ː송중기</li>
+                
+            <li class="li"> 좋아하는 계절은ː봄 </li>
+                
+            <li class="li">좋아하는 요일ː토요일</li>
+            <li class="li">좋아하는 노래ːJustin Bieber-Peaches(FEAT.Daniel Caesar & Giveon)
+                <br><br><audio controls src="photo/peaches.mp3" preload="auto"></audio>
+            </li>
+            <br><li class="li">좋아하는 게임ː 브롤스타즈</li>
+            <li class="li">좋아하는 것ː 멍때리기, 놀이공원, 요가, 사진찍기</li>
+            <li class="li">싫어하는 것ː 여유가 없는 것, 벌레</li>
+            <li class="li">보물1호ː 나, 가족, 주변사람들</li>
+        </ul></div>
+       
+        <br><br><br>
+
+        <footer>
+            <table id="license">
+                <tr>
+                <th rowspan="3" id="th3">Yoon's Garden</th><th class="th2">LICENSE</th><th class="th2">CONTACT</th>
+                <th rowspan="3"><a href="https://www.instagram.com/oligodang.__/"><img src="photo/insta.png" width="20px" height="20px"></a>&nbsp;&nbsp;
+                    <a href="https://www.youtube.com/channel/UCooOoEoUvbf4nEC82JXqKMw"><img src="photo/youtube.png" width="20px" height="20px"></a></th>
+                </tr>
+                <tr>
+                <td class="tdtd">ⓒ2021 KIM YOON</td><td class="tdtd">Email:kyoon0203@gmail.com</td>
+                </tr>
+                <tr>
+                <td class="tdtd">All rights reserved</td><td class="tdtd">Phone:010-8953-6038</td>
+                </tr>
+            </table>
+        </footer>
+        </html>

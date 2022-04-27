@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOON'S GARDEN</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body {background-image:url("photo/cloud.jpg");background-repeat: no-repeat;opacity: 0;
+    background-attachment: scroll;background-position:center;background-size: cover;}
+    footer{background-color: black;display:block;height: 120px;} 
+    #bigtitle {font-family: 'Dancing Script', cursive;font-size:45px;
+          color:#7F7F7F;position:absolute;left:580px;top:30px;display:inline;letter-spacing: 4px;}
+    #menu {height: 100px;position: absolute;top:150px;background-color: rgba(0, 0, 0, 0.17);}
+   
+    .th {font-family:'Times New Roman', Times, serif;color:#595959;font-size:18px; width: 371.5px;
+    text-decoration: underline;}
+    #smalltitle{font-size: 45px;text-align: center;}
+    #image{display:inline;margin-left: 80px;}
+    img {border-radius: 4px;filter:brightness(100%) ;}
+   
+    
+   
+    
+    #nineteen {width: 300px;height: 300px;} 
+    
+   
+   
+   
+    #twenty{width:215px;height: 300px;}
+    #twentyone{width: 300px;height: 300px;} 
+    #twentytwo{width: 300px;height: 300px;} 
+    #now{width: 169px;height: 300px;} 
+    #info {font-family:'Noto Serif JP', serif;text-align: center;line-height: 30pt;font-size: 14pt;}
+    #license {width: 100%;height:80px;position: relative;top: 15px;}
+    .th2{font-size:12px;color: white;}
+    .tdtd{font-size:9px;color: white;text-align: center;}
+    #th3{font-size: 15px;color: white;}
+    a:link{color:black;}
+    a:visited{color:black;}
+    hr {border-color: black;}
+    #yeartable{position: absolute;top:600px; left: 100px;}
+</style>
+
+<script type="text/javascript">
+var start;
+       var op_count=0
+       var settime;
+       window.onload=function(){
+           start=setTimeout(fade_in,500)
+       }
+       function fade_in(){
+           op_count=op_count+0.1;
+           backg.style.opacity=op_count;
+           settime=setTimeout(fade_in,100);
+           if(op_count>1){clearTimeout(settime);}
+       }
+
+    
+       
+function changeSize1(event){ 
+   event.target.style.width="320px"
+   event.target.style.height="320px"
+   event.target.style.transition="all 0.5s"
+
+}
+function changeSize2(event){
+   event.target.style.width="300px"
+   event.target.style.height="300px"
+   event.target.style.transition="all 0.5s"
+  
+}
+
+function changeSize3(event){ 
+   event.target.style.width="255px"
+   event.target.style.height="320px"
+   event.target.style.transition="all 0.5s"}
+
+function changeSize4(event){ 
+   event.target.style.width="245px"
+   event.target.style.height="300px"
+   event.target.style.transition="all 0.5s"}
+
+function changeSize5(event){ 
+   event.target.style.width="189px"
+   event.target.style.height="320px"
+   event.target.style.transition="all 0.5s"}
+
+function changeSize6(event){ 
+   event.target.style.width="169px"
+   event.target.style.height="300px"
+   event.target.style.transition="all 0.5s"}
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+<body id="backg">
+    <Br>
+        <a href="index.html" style="text-decoration:none"><h1 id="bigtitle">YOON'S GARDEN</h1></a>
+        <br>
+    <table  id="menu" >
+        <tr>
+            <th class="th"><a href="PROFILE.html">PROFILE</a></th>
+            <th class="th"><a href="LIFE.html">LIFE</a></th>
+            <th class="th"><a href="ACHIEVEMENT.html"> ACHIEVEMENT </a></th>
+            <th class="th"><a href="TMI.html">TMI</a></th>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br>
+    <h1 id="smalltitle">PROFILE</h1><hr><br>
+    <div id="image">
+  
+    <img id="nineteen" src="photo/19.jpg" onmouseover="changeSize1(event)" onmouseleave="changeSize2(event)"
+    >
+
+    
+    <img id="twenty" src="photo/20.jpg" onmouseover="changeSize3(event)" onmouseleave="changeSize4(event)"
+       >
+
+    <img id="twentyone" src="photo/21.jpg" onmouseover="changeSize1(event)" onmouseleave="changeSize2(event)"
+     >
+
+    <img id="twentytwo" src="photo/me3.jpg" onmouseover="changeSize1(event)" onmouseleave="changeSize2(event)" 
+    >
+
+    <img id="now" src="photo/now.jpg" onmouseover="changeSize5(event)" onmouseleave="changeSize6(event)" 
+    ></div><br><br>
+    
+   
+    
+
+    <p id="info">
+        <span style="font-size: 30px;">NAME : KIM YOON</span><br>
+        AGE : <input type="number" min="10" max="80" step="1" value="20"><br>
+        E-mail : kyoon0203@gmail.com<br>
+        Major : <span style="font-family: 'Nanum Myeongjo', serif;">생명시스템학부, IT공학전공</span><br>
+        JOB : <select name:"job" size="1">
+            <option>Student</option>
+            <option>Worker</option>
+            <option>Researcher</option>
+            <option>Jobless</option>
+        </select><br>
+        HOBBY : <input type:"text" name="hobby" value="please enter"><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+
+
+    </p>
+<br><br>
+
+
+</body>
+<footer>
+    <table id="license">
+        <tr>
+        <th rowspan="3" id="th3">Yoon's Garden</th><th class="th2">LICENSE</th><th class="th2">CONTACT</th>
+        <th rowspan="3"><a href="https://www.instagram.com/oligodang.__/"><img src="photo/insta.png" width="20px" height="20px"></a>&nbsp;&nbsp;
+            <a href="https://www.youtube.com/channel/UCooOoEoUvbf4nEC82JXqKMw"><img src="photo/youtube.png" width="20px" height="20px"></a></th>
+        </tr>
+        <tr>
+        <td class="tdtd">ⓒ2021 KIM YOON</td><td class="tdtd">Email:kyoon0203@gmail.com</td>
+        </tr>
+        <tr>
+        <td class="tdtd">All rights reserved</td><td class="tdtd">Phone:010-8953-6038</td>
+        </tr>
+    </table>
+</footer>
+</html>
